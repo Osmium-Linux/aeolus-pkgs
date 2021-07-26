@@ -38,7 +38,7 @@ git clone --depth 1 https://github.com/Osmium-Linux/linux-tkg-noninteractive
 cp ./linux-tkg-noninteractive/output/*.pkg.tar.zst $DIR/w86_64/
 rm -rf linux-tkg-noninteractive 
 
-LIST=(webmin mangohud goverlay-bin gitahead pacman-git plymouth-themes-adi1090x-pack1-git plymouth-themes-adi1090x-pack2-git plymouth-themes-adi1090x-pack3-git plymouth-themes-adi1090x-pack4-git anbox-git aafm-git scrcpy authy notion-app yadm bitwarden gwe protontricks legendary iridium-deb timeshift proton-ge-custom android-sdk-platform-tools lib32-mangohud lib32-mangohud-git lib32-mangohud-opengl2 mangohud-common mangohud-common-git mangohud-git)
+LIST=(webmin mangohud goverlay-bin pacman-git anbox-git aafm-git scrcpy authy notion-app yadm bitwarden gwe protontricks legendary iridium-deb timeshift proton-ge-custom android-sdk-platform-tools lib32-mangohud lib32-mangohud-git lib32-mangohud-opengl2 mangohud-common mangohud-common-git mangohud-git)
 # Sort packages
 PKGS=($(for i in "${LIST[@]}"; do echo $i; done | sort))
 
